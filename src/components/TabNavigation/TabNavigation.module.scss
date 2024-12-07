@@ -1,0 +1,60 @@
+@import '@/styles/utils/mixins';
+
+.tabNavigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+.tabMenu {
+  position: relative;
+  max-width: 1500px;
+  display: flex;
+  gap: 0.5rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  user-select: none;
+  scroll-behavior: smooth;
+
+  opacity: 0;
+  transform: translateX(100px);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tabButton {
+  @include font(var(--fs-body-m), 1.5, var(--fw-medium));
+  padding: 0.875rem 0.75rem;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: border-bottom var(--transition-d) var(--transition-tf);
+  color: var(--white-70);
+
+  @include onTablet {
+    padding: 0.875rem 1.5rem;
+  }
+
+  @include onLaptop {
+    &:hover {
+      border-bottom: 2px solid var(--white-15);
+    }
+  }
+
+  &.activeTab {
+    color: var(--white);
+  }
+}
+
+.tabIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  transition: transform var(--transition-d) var(--transition-tf);
+	background-color: var(--light-crimson);
+}

@@ -1,0 +1,47 @@
+{
+  "content": [
+    {
+      "id": "Elden Ring",
+      "title": "Elden Ring",
+      "text": "Embark on a grand journey across the mystical Lands Between in this epic fantasy action-RPG by FromSoftware. Discover a vast world full of complex characters, lore, and intense combat.",
+      "image": "/eldenring.webp",
+      "altText": "Elden Ring cover"
+    },
+    {
+      "id": "Bloodborne",
+      "title": "Bloodborne",
+      "text": "Explore the gothic city of Yharnam, whose denizens are afflicted with a blood-borne disease. This action RPG challenges players with its intricate mystery and unforgiving combat.",
+      "image": "/bloodborn.webp",
+      "altText": "Bloodborne cover"
+    },
+    {
+      "id": "Dark Souls 3",
+      "title": "Dark Souls 3",
+      "text": "Confront the brutal and beautiful world of Lothric in this critically acclaimed dark fantasy RPG. Battle formidable foes and unravel the deep lore behind the fading fire.",
+      "image": "/ds3.webp",
+      "altText": "Dark Souls 3 cover"
+    },
+    {
+      "id": "Sekiro",
+      "title": "Sekiro",
+      "text": "Step into the shoes of the 'one-armed wolf,' a disgraced and disfigured warrior rescued from the brink of death. Master the art of stealth, explore late 1500s Sengoku Japan, and exact revenge against your nemesis.",
+      "image": "/sekiro.webp",
+      "altText": "Sekiro cover"
+    },
+    {
+      "id": "Demon's Souls",
+      "title": "Demon's Souls",
+      "text": "Navigate the treacherous realms of Boletaria in a remake of the genre-defining game that blends unforgiving combat with unique online interactions. Prepare to face nightmarish creatures in a world filled with despair.",
+      "image": "/ds.webp",
+      "altText": "Demon's Souls cover"
+    }
+  ],
+
+  "navigation": [
+		"Elden Ring",
+		"Bloodborne",
+		"Dark Souls 3",
+		"Sekiro",
+		"Demon's Souls"
+	]
+}

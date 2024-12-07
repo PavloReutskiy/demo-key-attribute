@@ -1,0 +1,95 @@
+@import '@/styles/utils/mixins';
+
+.contentCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 2;
+
+  @include onTablet {
+    margin-top: 2.5rem;
+    gap: 2.5rem;
+  }
+
+  @include onLaptop {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.25rem;
+    padding: 2.25rem 0;
+    margin-top: 1rem;
+  }
+
+  @include onMediumDesktop {
+    gap: 4rem;
+    padding: 1.75rem 0;
+  }
+}
+
+.imageWrapper {
+  margin-inline: auto;
+  max-width: 350px;
+  width: 100%;
+
+  opacity: 0;
+  transform: translateX(-100px);
+
+  @include onLaptop {
+    margin-inline: 0;
+    max-width: 450px;
+  }
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-inline: auto;
+  max-width: 560px;
+
+  @include onTablet {
+    gap: 0.75rem;
+  }
+
+  @include onLaptop {
+    margin-inline: 0;
+    max-width: 420px;
+  }
+
+  @include onMediumDesktop {
+    gap: 1rem;
+  }
+}
+
+.cardText {
+  @include font(var(--fs-body-l), 1.5, var(--fw-regular));
+  color: var(--white-50);
+  margin-bottom: 0.5rem;
+
+  opacity: 0;
+  transform: translateX(100px);
+
+  @include onTablet {
+    margin-bottom: 1.25rem;
+    font-size: var(--fs-body-m);
+  }
+
+  @include onMediumDesktop {
+    margin-bottom: 1rem;
+    font-size: var(--fs-body-l);
+  }
+}
+
+.heading {
+  opacity: 0;
+  transform: translateX(100px);
+	@include font(var(--fs-h3), 1.2, var(--fw-semi-bold));
+}

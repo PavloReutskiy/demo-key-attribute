@@ -1,0 +1,36 @@
+@mixin onMobile {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onLaptop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onMediumDesktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin onLargeDesktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin font($size, $lineHeight: 1.5, $weight: 300, $fontStyle: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+  font-style: $fontStyle;
+}

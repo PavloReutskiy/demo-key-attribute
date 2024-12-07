@@ -1,0 +1,74 @@
+:root {
+  font-size: 16px;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+ /*Primary*/
+  --main-bg: #09021d;
+  --white: #fcfcfc;
+  --white-70: #ffffffB3;
+  --white-50: #ffffff7f;
+  --white-15: #ffffff26;
+  --white-10: #ffffff19;
+  --white-5: #ffffff0c;
+
+  /*Accent*/
+  --light-crimson: #F56C8F;
+  --apricot: #FBBE7E;
+
+  /*font weight*/
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  /*font size*/
+  --fs-body-s: 0.875rem;
+  --fs-body-m: 0.875rem;
+  --fs-body-l: 1rem;
+  --fs-h3: 1.75rem;
+  --fs-h2: 2rem;
+
+  /*border-radius*/
+  --br-xs: 0.75rem;
+  --br-s: 1rem;
+  --br-m: 1.5rem;
+
+  /*transition*/
+  --transition-tf: ease-in-out;
+  --transition-d: 0.25s;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-body-s: 0.875rem;
+    --fs-body-m: 1rem;
+    --fs-body-l: 1rem;
+    --fs-h3: 2rem;
+    --fs-h2: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --fs-body-s: 0.875rem;
+    --fs-body-m: 1rem;
+    --fs-body-l: 1.125rem;
+    --fs-h3: 2rem;
+    --fs-h2: 2.5rem; 
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --fs-body-s: 0.875rem;
+    --fs-body-m: 1rem;
+    --fs-body-l: 1.125rem;
+    --fs-h3: 2.5rem;
+    --fs-h2: 3rem;
+  }
+}
